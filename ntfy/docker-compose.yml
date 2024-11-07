@@ -1,0 +1,16 @@
+services:
+  ntfy:
+    image: binwiederhier/ntfy
+    container_name: ntfy
+    command:
+      - serve
+    environment:
+      - TZ=UTC
+      - PUID=${PUID}
+      - PGID=${PGID}
+    volumes:
+      - /home/arruser/ntfy/:/var/cache/ntfy
+      - /home/arruser/ntfy/:/etc/ntfy
+    ports:
+      - 85:85
+    restart: unless-stopped

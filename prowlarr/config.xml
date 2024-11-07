@@ -1,0 +1,23 @@
+<Config>
+  <BindAddress>*</BindAddress>
+  <Port>9696</Port>
+  <SslPort>6969</SslPort>
+  <EnableSsl>False</EnableSsl>
+  <LaunchBrowser>True</LaunchBrowser>
+  <ApiKey>317bd5b2886b45ac92a9f50a86e87677</ApiKey>
+  <AuthenticationMethod>Basic</AuthenticationMethod>
+  <AuthenticationRequired>Enabled</AuthenticationRequired>
+  <Branch>master</Branch>
+  <LogLevel>debug</LogLevel>
+  <SslCertPath></SslCertPath>
+  <SslCertPassword></SslCertPassword>
+  <UrlBase></UrlBase>
+  <InstanceName>Prowlarr</InstanceName>
+  <UpdateMechanism>Docker</UpdateMechanism>
+  <PostgresUser>arrdbuser</PostgresUser>
+  <PostgresPassword>1BMC:^AcX0ztCt*hvGP:</PostgresPassword>
+  <PostgresPort>5432</PostgresPort>
+  <PostgresHost>01-prd-sql-01.rlssgroup.com</PostgresHost>
+  <PostgresMainDb>prowlarr-main</PostgresMainDb>
+  <PostgresLogDb>prowlarr-log</PostgresLogDb>
+</Config>

@@ -1,0 +1,23 @@
+<Config>
+  <BindAddress>*</BindAddress>
+  <Port>8989</Port>
+  <SslPort>9898</SslPort>
+  <EnableSsl>False</EnableSsl>
+  <LaunchBrowser>True</LaunchBrowser>
+  <ApiKey>b0ebbcf70fb842fdbb6a9897d4460cbd</ApiKey>
+  <AuthenticationMethod>Basic</AuthenticationMethod>
+  <AuthenticationRequired>Enabled</AuthenticationRequired>
+  <Branch>main</Branch>
+  <LogLevel>debug</LogLevel>
+  <SslCertPath></SslCertPath>
+  <SslCertPassword></SslCertPassword>
+  <UrlBase></UrlBase>
+  <InstanceName>Sonarr</InstanceName>
+  <UpdateMechanism>Docker</UpdateMechanism>
+  <PostgresUser>arrdbuser</PostgresUser>
+  <PostgresPassword>1BMC:^AcX0ztCt*hvGP:</PostgresPassword>
+  <PostgresPort>5432</PostgresPort>
+  <PostgresHost>01-prd-sql-01.rlssgroup.com</PostgresHost>
+  <PostgresMainDb>sonarr-main</PostgresMainDb>
+  <PostgresLogDb>sonarr-log</PostgresLogDb>
+</Config>

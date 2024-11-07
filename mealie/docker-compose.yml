@@ -1,0 +1,28 @@
+services:
+  app:
+    image: ghcr.io/mealie-recipes/mealie:v2.1.0 # 
+    container_name: mealie
+    restart: unless-stopped
+    ports:
+        - "9925:9925"
+    deploy:
+      resources:
+        limits:
+          memory: 1000M
+    volumes:
+      - /home/arruser/mealie:/app/data/
+    environment:
+      PUID: ${PUID}
+      PGID: ${PGID}
+      TZ=: tc/UTC
+      ALLOW_SIGNUP: "false"
+      MAX_WORKERS: 1
+      WEB_CONCURRENCY: 1
+      BASE_URL: https://mealie.rlssgroup.com
+      # Database Settings
+      DB_ENGINE: postgres
+      POSTGRES_USER: ${PG_USERNAME}
+      POSTGRES_PASSWORD: ${PG_PASSWORD}
+      POSTGRES_SERVER: 01-prd-sql-01.rlssgroup.com
+      POSTGRES_PORT: 5432
+      POSTGRES_DB: mealie

@@ -1,0 +1,23 @@
+<Config>
+  <BindAddress>*</BindAddress>
+  <Port>6969</Port>
+  <SslPort>8008</SslPort>
+  <EnableSsl>False</EnableSsl>
+  <LaunchBrowser>True</LaunchBrowser>
+  <ApiKey>d8242efc7504493eaad80644407378a6</ApiKey>
+  <AuthenticationMethod>None</AuthenticationMethod>
+  <AuthenticationRequired>Enabled</AuthenticationRequired>
+  <Branch>main</Branch>
+  <LogLevel>info</LogLevel>
+  <SslCertPath></SslCertPath>
+  <SslCertPassword></SslCertPassword>
+  <UrlBase></UrlBase>
+  <InstanceName>Whisparr</InstanceName>
+  <UpdateMechanism>Docker</UpdateMechanism>
+  <PostgresUser>arrdbuser</PostgresUser>
+  <PostgresPassword>1BMC:^AcX0ztCt*hvGP:</PostgresPassword>
+  <PostgresPort>5432</PostgresPort>
+  <PostgresHost>01-prd-sql-01.rlssgroup.com</PostgresHost>
+  <PostgresMainDb>whisparr-main</PostgresMainDb>
+  <PostgresLogDb>whisparr-log</PostgresLogDb>
+</Config>
