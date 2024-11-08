@@ -6,7 +6,6 @@ LOG=/home/$USER/scripts/backup.txt
 X=1
 while [ $X -le 5 ]
 do
-
     case $X in
 
         1)
