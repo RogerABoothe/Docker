@@ -1,9 +1,7 @@
 # Created from RS-44 requirements
 #!/bin/bash
 
-. /home/arruser/scripts/arrbackup.config
-
-LOG=/home/$USER/scripts/arrbackup.txt
+LOG=/home/$USER/scripts/backup.txt
 
 X=1
 while [ $X -le 5 ]
@@ -33,7 +31,7 @@ do
     esac
 
     echo $(date "+%Y-%m-%d %H-%M-%S") "Process started for" $APP >> $LOG
-    cp -r /home/arruser/$APP/Backups /home/arruser/backup/$HOSTNAME/$APP &>> $LOG
+    cp -r /home/$USER/$APP/Backups /home/$USER/backup/$HOSTNAME/$APP &>> $LOG
     echo $(date "+%Y-%m-%d %H-%M-%S") "Process ended for" $APP >> $LOG
 
     X=$(( $X + 1 ))
